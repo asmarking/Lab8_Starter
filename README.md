@@ -10,3 +10,5 @@ Check yoiur
 3) No, this is more of an end to end test case because there would most likely be multipe functions used to 
    a accomplish the messaging feature. 
 4) Yes you woud because unit test are often used to test an individual function. 
+
+![](https://cdn.discordapp.com/attachments/984881858758193182/1043769221403922442/Screen_Shot_2022-11-19_at_9.59.15_PM.png)
