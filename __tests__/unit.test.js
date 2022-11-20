@@ -43,3 +43,29 @@ test('Email missing extension', () => {
 test('No @ character', () => {
     expect(functions.isEmail("jackwagner654gmail.com")).toBe(false);
 });
+
+test('1) is hex color?', () => {
+    expect(functions.isHexColor("nov")).toBe(false);
+})
+test('1) is hex color?', () => {
+    expect(functions.isHexColor("nov")).toBe(false);
+})
+test('1. not a hex color', () => {
+    expect(functions.isHexColor("#1DCF33")).toBe(true);
+})
+test('2. not a hex color', () => {
+    expect(functions.isHexColor("#7D92B1")).toBe(true);
+})
+
+test('testing if a valid date', () => {
+    expect(functions.isDate("1 / 2 / 20")).toBe(false);
+});
+test('testing if a valid date', () => {
+    expect(functions.isDate("12 / 2222/ 4444 ")).toBe(false);
+});
+test('testing if a valid date', () => {
+    expect(functions.isDate("02/03/1033")).toBe(true);
+});
+test('testing if a valid date', () => {
+    expect(functions.isDate("02/03/1033")).toBe(true);
+});
