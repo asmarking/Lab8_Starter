@@ -7,16 +7,14 @@ test('Valid Phone Number', () => {
     expect(functions.isPhoneNumber("760-612-9251")).toBe(true);
 });
 test('Valid Phone Number with area code', () => {
-    expect(functions.isPhoneNumber("1+760-612-9251")).toBe(true);
+    expect(functions.isPhoneNumber("1+(760)-612-9251")).toBe(true);
 });
 test('No Dashes', () => {
     expect(functions.isPhoneNumber("7606129251")).toBe(false);
 });
-// test('Valid Phone Number with area code', () => {
-//     expect(functions.isPhoneNumber("7213213160-6132321332132131312-922312132151")).toBe(false);
-// });
-
-
+test('Incorrect Dashes', () => {
+    expect(functions.isPhoneNumber("132/321/1203")).toBe(false);
+});
 
 //password
 test('Password starting with number', () => {
